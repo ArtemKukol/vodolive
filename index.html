@@ -1,311 +1,221 @@
-<!-- saved from url=(0024)https://www.vodolive.ru/ -->
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-		/>
-		<link rel="stylesheet" href="./css/Norm_block_model.css" />
-		<link rel="stylesheet" href="./css/style.css" />
-		<title>Водолайф</title>
+		<title>VODOLIVE — сайт в разработке</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<style>
-			/* Normalize.css */
-			html {
-				font-size: 16px;
-				line-height: 1.15;
-				-webkit-text-size-adjust: 100%;
-			}
-			body {
-				margin: 0;
-			}
-			main {
-				display: block;
-			}
-			h1 {
-				font-size: 2em;
-				margin: 0.67em 0;
-			}
-			hr {
-				box-sizing: content-box;
-				height: 0;
-				overflow: visible;
-			}
-			pre {
-				font-family: monospace, monospace;
-				font-size: 1em;
-			}
-			p, ul, li {
-				margin: 0;
-				padding: 0;
-			}
-			a {
-				background-color: transparent;
-			}
-			abbr[title] {
-				border-bottom: none;
-				text-decoration: underline;
-				text-decoration: underline dotted;
-			}
-			b,
-			strong {
-				font-weight: bolder;
-			}
-			code,
-			kbd,
-			samp {
-				font-family: monospace, monospace;
-				font-size: 1em;
-			}
-			small {
-				font-size: 80%;
-			}
-			sub,
-			sup {
-				font-size: 75%;
-				line-height: 0;
-				position: relative;
-				vertical-align: baseline;
-			}
-			sub {
-				bottom: -0.25em;
-			}
-			sup {
-				top: -0.5em;
-			}
-			img {
-				border-style: none;
-			}
-			button,
-			input,
-			optgroup,
-			select,
-			textarea {
-				font-family: inherit;
-				font-size: 100%;
-				line-height: 1.15;
-				margin: 0;
-			}
-			button,
-			input {
-				overflow: visible;
-			}
-			button,
-			select {
-				text-transform: none;
-			}
-			button,
-			[type='button'],
-			[type='reset'],
-			[type='submit'] {
-				-webkit-appearance: button;
-			}
-			button::-moz-focus-inner,
-			[type='button']::-moz-focus-inner,
-			[type='reset']::-moz-focus-inner,
-			[type='submit']::-moz-focus-inner {
-				border-style: none;
-				padding: 0;
-			}
-			button:-moz-focusring,
-			[type='button']:-moz-focusring,
-			[type='reset']:-moz-focusring,
-			[type='submit']:-moz-focusring {
-				outline: 1px dotted ButtonText;
-			}
-			fieldset {
-				padding: 0.35em 0.75em 0.625em;
-			}
-			legend {
-				box-sizing: border-box;
-				color: inherit;
-				display: table;
-				max-width: 100%;
-				padding: 0;
-				white-space: normal;
-			}
-			progress {
-				vertical-align: baseline;
-			}
-			textarea {
-				overflow: auto;
-			}
-			[type='checkbox'],
-			[type='radio'] {
-				box-sizing: border-box;
-				padding: 0;
-			}
-			[type='number']::-webkit-inner-spin-button,
-			[type='number']::-webkit-outer-spin-button {
-				height: auto;
-			}
-			[type='search'] {
-				-webkit-appearance: textfield;
-				outline-offset: -2px;
-			}
-			[type='search']::-webkit-search-decoration {
-				-webkit-appearance: none;
-			}
-			::-webkit-file-upload-button {
-				-webkit-appearance: button;
-				font: inherit;
-			}
-			details {
-				display: block;
-			}
-			summary {
-				display: list-item;
-			}
-			template {
-				display: none;
-			}
-			[hidden] {
-				display: none;
-			}
 			:root {
-				--color-text: #632cc2;
+				--brand-blue: #2f45d8;
+				--text-main: #222;
+				--text-muted: #555;
+				--bg: #f4f6fb;
+				--card-bg: #ffffff;
+				--border: #e0e4f0;
+			}
+			* {
+				box-sizing: border-box;
 			}
 			body {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				text-align: center;
-				margin: 1rem;
+				margin: 0;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+					Helvetica, Arial, sans-serif;
+				background: radial-gradient(
+					circle at top,
+					#ffffff 0,
+					var(--bg) 55%,
+					#e5e9f8 100%
+				);
+				color: var(--text-main);
 			}
-			.user-text {
-				font-family: sans-serif;
+			html,
+			body {
+				height: 100%;
+				margin: 0;
+			}
+			.site-bg {
+				min-height: 100vh;
+				background: radial-gradient(
+					circle at top,
+					#ffffff 0,
+					var(--bg) 55%,
+					#e5e9f8 100%
+				);
+			}
+			.page {
+				max-width: 960px;
+				margin: 0 auto;
+				padding: 32px 16px 48px;
+			}
+			header {
+				text-align: center;
+				margin-bottom: 32px;
+			}
+			header h1 {
+				margin: 0 0 8px;
 				font-size: 2rem;
 				font-weight: 700;
-				color: #6b6b6b;
 			}
-			h1 {
-				text-transform: uppercase;
-				color: var(--color-text);
+			header p {
+				margin: 0;
+				font-size: 1.1rem;
+				color: var(--text-muted);
 			}
-			.wrapper {
+			.logo {
+				margin: 32px 0 20px;
+				font-size: 2.4rem;
+				letter-spacing: 0.18em;
+				font-weight: 700;
+				color: var(--brand-blue);
+			}
+			.stores {
 				display: flex;
-				margin: 0 auto;
+				gap: 20px;
+				flex-wrap: wrap;
+				justify-content: center;
+				margin-bottom: 28px;
 			}
-			.time-work {
-				margin-bottom: 1rem;
+			.store-card {
+				flex: 1 1 280px;
+				max-width: 430px;
+				background: var(--card-bg);
+				border-radius: 16px;
+				padding: 20px 22px;
+				box-shadow: 0 12px 25px rgba(0, 0, 0, 0.06);
+				border: 1px solid var(--border);
 			}
-
-			.shop {
-				margin-right: 2rem;
+			.store-title {
+				font-weight: 600;
+				margin-bottom: 4px;
 			}
-			.shop:last-child {
-				margin-right: 0;
+			.store-address {
+				margin: 0 0 12px;
+				line-height: 1.35;
 			}
-			li {
-				list-style: none;
-        margin-top: 0.5rem;
+			.store-section-title {
+				font-weight: 600;
+				margin: 10px 0 4px;
 			}
-			a {
+			.time-row {
+				display: flex;
+				justify-content: space-between;
+				font-size: 0.95rem;
+			}
+			.phones,
+			.emails {
+				margin: 8px 0 0;
+				font-size: 0.95rem;
+				line-height: 1.4;
+			}
+			.phones a,
+			.emails a {
+				color: var(--brand-blue);
 				text-decoration: none;
 			}
-			.inet-shop {
-				margin-top: 2rem;
+			.phones a:hover,
+			.emails a:hover {
+				text-decoration: underline;
 			}
-			.links {
-				display: flex;
-				justify-content: center;
+			.online-shop {
+				text-align: center;
+				margin-top: 20px;
+				padding: 18px 16px;
+				border-radius: 14px;
+				background: #e9ecff;
+				border: 1px solid rgba(47, 69, 216, 0.16);
 			}
-			.links a {
-				margin-right: 1rem;
-        margin-top: 0.5rem;
+			.online-shop-title {
+				font-weight: 600;
+				margin-bottom: 4px;
 			}
-			.links a:last-child {
-				margin-right: 0;
+			.online-phone {
+				margin-bottom: 8px;
 			}
-      .link-work {
-        margin-top: 2rem;
-      }
-
-
+			.online-links a {
+				margin: 0 8px;
+				color: var(--brand-blue);
+				text-decoration: none;
+				font-weight: 500;
+			}
+			.online-links a:hover {
+				text-decoration: underline;
+			}
+			footer {
+				text-align: center;
+				margin-top: 26px;
+				font-size: 0.85rem;
+				color: var(--text-muted);
+			}
 		</style>
 	</head>
 	<body>
-		<span class="user-text">
-			Сайт в разработке! <br />
-			Ждём вас в магазинах!
-		</span>
-		<div>
-			<h1>vodolive</h1>
-			<div class="wrapper">
-				<div class="shop">
-					<img src="" alt="" />
-					<div class="time-work">
-						Санкт-Петербург, ул. Оптиков, <br />
-						д. 37 корп. 1, 2-й этаж
+		<div class="site-bg">
+			<div class="page">
+				<header>
+					<h1>Сайт в разработке</h1>
+					<p>Ждём вас в магазинах VODOLIVE в Санкт-Петербурге</p>
+					<div class="logo">VODOLIVE</div>
+				</header>
+
+				<section class="stores">
+					<article class="store-card">
+						<div class="store-title">Санкт-Петербург, ул. Оптиков</div>
+						<p class="store-address">д. 37, корп. 1, 2-й этаж</p>
+						<div class="store-section-title">Режим работы магазина:</div>
+						<div class="time-row">
+							<span>Пн–Пт</span><span>09:00–19:00</span>
+						</div>
+						<div class="time-row"><span>Сб</span><span>10:00–17:00</span></div>
+						<div class="time-row"><span>Вс</span><span>Выходной</span></div>
+						<div class="store-section-title">Телефон:</div>
+						<div class="phones">
+							<a href="tel:+78126518570">(812) 651-85-70</a><br />
+							<a href="tel:+79992008570">(999) 200-85-70</a>
+						</div>
+						<div class="store-section-title">E-mail:</div>
+						<div class="emails">
+							<a href="mailto:vodolive@mail.ru">vodolive@mail.ru</a><br />
+							<a href="mailto:6518570@mail.ru">6518570@mail.ru</a>
+						</div>
+					</article>
+
+					<article class="store-card">
+						<div class="store-title">Санкт-Петербург, ул. Наличная</div>
+						<p class="store-address">д. 27, лит. А</p>
+						<div class="store-section-title">Режим работы магазина:</div>
+						<div class="time-row">
+							<span>Пн–Пт</span><span>09:00–19:00</span>
+						</div>
+						<div class="time-row"><span>Сб</span><span>10:00–17:00</span></div>
+						<div class="time-row"><span>Вс</span><span>Выходной</span></div>
+						<div class="store-section-title">Телефон:</div>
+						<div class="phones">
+							<a href="tel:+78124568570">(812) 456-85-70</a><br />
+							<a href="tel:+79675708570">(967) 570-85-70</a>
+						</div>
+						<div class="store-section-title">E-mail:</div>
+						<div class="emails">
+							<a href="mailto:vodolive-vo@mail.ru">vodolive-vo@mail.ru</a>
+						</div>
+					</article>
+				</section>
+
+				<section class="online-shop">
+					<div class="online-shop-title">Интернет-магазин</div>
+					<div class="online-phone">
+						Телефон: <a href="tel:+79219608570">8 (921) 960-85-70</a>
 					</div>
-					<p>Режим работы магазина:</p>
-					<p>Пн-Пт: 09:00-19:00</p>
-					<p>Сб: 10:00-17:00</p>
-					<p>Вс: Выходной</p>
-					<div class="link-work">
-						<ul>
-							<li>
-								<a href="tel:8126518570" class="call-button">(812) 651-85-70</a>
-							</li>
-							<li>
-								<a href="tel:9992008570" class="call-button">(999) 200-85-70</a>
-							</li>
-							<li>
-								<a
-									href="mailto:vodolive@mail.ru?subject=Вопрос%20по%20сантехнике&body=Здравствуйте%20Vodolive,%20у%20меня%20есть%20вопрос%20..."
-									class="email-button"
-									>vodolive@mail.ru</a
-								>
-							</li>
-							<li>
-								<a
-									href="mailto:6518570@mail.ru?subject=Вопрос%20по%20сантехнике&body=Здравствуйте%20Vodolive,%20у%20меня%20есть%20вопрос%20..."
-									class="email-button"
-									>6518570@mail.ru</a
-								>
-							</li>
-						</ul>
+					<div class="online-links">
+						<a href="https://www.vodolive.ru" target="_blank"
+							>www.vodolive.ru</a
+						>
+						<a href="https://vk.com/vodolive" target="_blank"
+							>vk.com/vodolive</a
+						>
 					</div>
-				</div>
-				<div class="shop">
-					<img src="" alt="" />
-					<div class="time-work">
-						Санкт-Петербург, ул. Наличная, <br />
-						д. 27 лит. А
-					</div>
-					<p>Режим работы магазина:</p>
-					<p>Пн-Пт: 09:00-19:00</p>
-					<p>Сб: 10:00-17:00</p>
-					<p>Вс: Выходной</p>
-					<div class="link-work">
-						<ul>
-							<li>
-								<a href="tel:8124568570" class="call-button">(812) 456-85-70</a>
-							</li>
-							<li>
-								<a href="tel:9675708570" class="call-button">(967) 570-85-70</a>
-							</li>
-							<li>
-								<a
-									href="mailto:vodolive-vo@mail.ru?subject=Вопрос%20по%20сантехнике&body=Здравствуйте%20Vodolive,%20у%20меня%20есть%20вопрос%20..."
-									class="email-button"
-									>vodolive-vo@mail.ru</a
-								>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="inet-shop">
-				<a href="tel:+79219608570" class="call-button"
-					>Интернет магазин: 8 (921) 960-85-70</a
-				>
-				<div class="links">
-					<a href="https://www.vodolive.ru" target="_blank">www.vodolive.ru</a>
-					<a href="https://vk.com/vodolive" target="_blank">vk.com/vodolive</a>
-				</div>
+				</section>
+
+				<footer>© VODOLIVE, Санкт-Петербург</footer>
 			</div>
 		</div>
 	</body>
